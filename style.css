@@ -1,0 +1,63 @@
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #ccc;
+        --fg: #444;
+        --color-sheme: "light";
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #444;
+        --fg: #ccc;
+        --color-sheme: "dark";
+    }
+}
+
+body {
+    background-color: var(--bg);
+}
+
+
+.menu-button {
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 4px;
+    border-color: rgb(100, 100, 100);
+    background-color: rgb(155, 155, 155);
+}
+
+.menu-button:hover {
+    border-color: rgb(0, 200, 0);
+    background-color: rgb(0, 255, 0);
+}
+
+.save-button {
+    position: fixed;
+    top: 1%;
+    float: left;
+    left: 50px;
+    width: 40px;
+}
+
+.load-button {
+    position: fixed;
+    top: 1%;
+    float: left;
+    left: 95px;
+    width: 40px;
+}
+
+.name-text {
+    position: fixed;
+    top: 1%;
+    float: left;
+    left: 140px;
+    width: 200px;
+    height: 17px;
+}
+
+.name-text:hover {
+    color: aqua;
+    background-color: var(--bg)
+}
